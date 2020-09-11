@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GADS2020 Project</string>
+    <string name="tab_text_1">Learning Leaders</string>
+    <string name="tab_text_2">Skill IQ Leaders</string>
+    <string name="submit">Submit</string>
+    <string name="app_bar_title">Leaderboard</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email Address</string>
+    <string name="gitUrl_hint">Project on GITHUB (link)</string>
+    <string name="project_submission">Project Submission</string>
+
+    <string-array name="test">
+        <item>asdf jkl0</item>
+        <item>asdf jkl1</item>
+        <item>asdf jkl2</item>
+        <item>asdf jkl3</item>
+        <item>asdf jkl4</item>
+        <item>asdf jkl5</item>
+        <item>asdf jkl6</item>
+        <item>asdf jkl7</item>
+        <item>asdf jkl8</item>
+        <item>asdf jkl9</item>
+    </string-array>
+
+    <string-array name="test1">
+        <item>asdf jkl9</item>
+        <item>asdf jkl8</item>
+        <item>asdf jkl7</item>
+        <item>asdf jkl6</item>
+        <item>asdf jkl5</item>
+        <item>asdf jkl4</item>
+        <item>asdf jkl3</item>
+        <item>asdf jkl2</item>
+        <item>asdf jkl1</item>
+        <item>asdf jkl0</item>
+    </string-array>
+
+</resources>
