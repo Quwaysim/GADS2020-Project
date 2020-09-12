@@ -45,10 +45,7 @@ public class SubmissionActivity extends AppCompatActivity {
 
             if (!(fName.equals("") && lName.equals("") && email.equals("") && gitUrl.equals(""))) {
                 submitProject(fName, lName, email, gitUrl);
-//                Toast.makeText(SubmissionActivity.this, "Working!", Toast.LENGTH_SHORT).show();
             } else {
-                //TODO remove the ff method
-//                    submitProject();
                 Toast.makeText(SubmissionActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             }
         });
@@ -62,9 +59,7 @@ public class SubmissionActivity extends AppCompatActivity {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 Log.d("MyTAG", "onResponse: Success" + response.code());
                 if (response.isSuccessful()) {
-                    Log.d("MyTaggg", "onResponse: " + response.isSuccessful());
-                    Toast.makeText(SubmissionActivity.this, "Success", Toast.LENGTH_SHORT).show();
-//                new KAlertDialog(getApplicationContext(), KAlertDialog.SUCCESS_TYPE).setContentText("Submission Successful").show();
+
                 }
             }
 
