@@ -20,10 +20,12 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
 
     private Context mContext;
     private List<Learner> learners;
+    private String achievementDetails;
 
-    public DataAdapter(Context context, List<Learner> learners) {
+    public DataAdapter(Context context, List<Learner> learners, String achievementDetails) {
         mContext = context;
         this.learners = learners;
+        this.achievementDetails = achievementDetails;
     }
 
     @NonNull
@@ -37,7 +39,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
     public void onBindViewHolder(@NonNull DataViewHolder holder, int position) {
         Picasso.get().load(learners.get(position).getBadgeUrl()).fit().into(holder.logo);
         holder.name.setText((learners.get(position).getName()));
-        holder.achievement.setText(learners.get(position).getAchievement());
+        holder.achievement.setText(learners.get(position).getAchievement() + achievementDetails);
         holder.country.setText(learners.get(position).getCountry());
     }
 

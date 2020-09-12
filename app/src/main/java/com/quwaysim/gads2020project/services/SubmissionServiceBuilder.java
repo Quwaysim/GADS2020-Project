@@ -5,10 +5,10 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class ServiceBuilder {
+public class SubmissionServiceBuilder {
 
     //BASE URL
-    private static final String URL = "https://gadsapi.herokuapp.com/api/";
+    private static final String URL = "https://docs.google.com/forms/d/e/";
 
     //Creating OkHttp Logging
     private static HttpLoggingInterceptor sHttpLoggingInterceptor =
@@ -27,7 +27,7 @@ public class ServiceBuilder {
     private static Retrofit sRetrofit = builder.build();
 
     //Retrofit service creator
-    public static <S> S buildService(Class<S> serviceType){
+    public static <S> S buildService(Class<S> serviceType) {
         return sRetrofit.create(serviceType);
     }
 
