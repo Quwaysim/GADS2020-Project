@@ -11,5 +11,7 @@
     <dimen name="standard">16dp</dimen>
     <dimen name="large">32dp</dimen>
     <dimen name="xlarge">64dp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="icon_size">64dp</dimen>
 
 </resources>

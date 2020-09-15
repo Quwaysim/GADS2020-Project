@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView submit = findViewById(R.id.btn_submit);
         submit.setOnClickListener((view -> {
+
             startActivity(new Intent(MainActivity.this, SubmissionActivity.class));
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }));

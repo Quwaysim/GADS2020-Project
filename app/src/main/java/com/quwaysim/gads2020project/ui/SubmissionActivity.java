@@ -52,6 +52,7 @@ public class SubmissionActivity extends AppCompatActivity {
     }
 
     private void submitProject(String fN, String lN, String email, String url) {
+        new SubmissionConfirmationDialog().show(getSupportFragmentManager(), "Submission Confirmation");
         DataService task = SubmissionServiceBuilder.buildService(DataService.class);
         Call<Void> submitProject = task.submitForm(fN, lN, email, url);
         submitProject.enqueue(new Callback<Void>() {
@@ -59,13 +60,13 @@ public class SubmissionActivity extends AppCompatActivity {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 Log.d("MyTAG", "onResponse: Success" + response.code());
                 if (response.isSuccessful()) {
-
+                    new SubmissionStatusDialog(R.layout.dialog_successful);
                 }
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                Log.d("MyTAG", "onResponse: Failed" + t.getMessage());
+                new SubmissionStatusDialog(R.layout.dialog_successful);
             }
         });
 

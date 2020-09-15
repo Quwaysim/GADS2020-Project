@@ -9,6 +9,10 @@
     <string name="email_hint">Email Address</string>
     <string name="gitUrl_hint">Project on GITHUB (link)</string>
     <string name="project_submission">Project Submission</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="yes">Yes</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="submission_not_successful">Submission Not Successful</string>
 
     <string-array name="test">
         <item>asdf jkl0</item>
